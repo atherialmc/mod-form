@@ -5,9 +5,11 @@
 <textarea placeholder="Why do you want to apply?" required></textarea>
 <button>Submit</button>
 </form>
+<p id="info" style="color: #f00"></p>
 <script>
   document.querySelector("form").addEventListener("submit", function (e) {
     e.preventDefault();
-    alert("Application rejected");
+    document.getElementById("info").textContent = "Application rejected";
   });
 </script>
+
